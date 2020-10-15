@@ -11,5 +11,25 @@ main > div {
     width: 100px;
     border: 1px solid black;
     border-radius: 4px;
-    background-color:rgba(0, 0, 0, 0.5);
+   
+}
+
+main > div.row1 {
+    background: radial-gradient(#11eb1c, #9198e5);
+}
+
+main > div.row2 {
+    background: radial-gradient(#daeb7e, #9198e5);
+}
+
+main > div.row3 {
+    background: radial-gradient(#e22794, #9198e5);
+}
+
+main > div.row4 {
+    background: radial-gradient(#0528f0, #9198e5);
+}
+
+main > div.active {
+    background: radial-gradient(#e66465, #9198e5);
 }
