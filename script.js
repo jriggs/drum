@@ -4,7 +4,7 @@ let sound = {
         window.addEventListener('keydown', performClick);
     },
 
-    library = 1
+    library : 1
 }
 
 function performClick(event) {
