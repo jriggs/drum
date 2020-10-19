@@ -12,20 +12,26 @@
 
 <body>
 
-  <audio id="play1" src="audio/1/Snare_01.mp3"></audio>
-  <audio id="play2" src="audio/1/Snare_02.mp3"></audio>
-  <audio id="play3" src="audio/1/Snare_03.mp3"></audio>
-  <audio id="play4" src="audio/1/Snare_04.mp3"></audio>
+  <audio preload="auto" id="play1" src="audio/1/Snare_01.mp3"></audio>
+  <audio preload="auto" id="play2" src="audio/1/Snare_02.mp3"></audio>
+  <audio preload="auto" id="play3" src="audio/1/Snare_03.mp3"></audio>
+  <audio preload="auto" id="play4" src="audio/1/Snare_04.mp3"></audio>
 
-  <audio id="play5" src="audio/1/Kick_01.mp3"></audio>
-  <audio id="play6" src="audio/1/Kick_02.mp3"></audio>
-  <audio id="play7" src="audio/1/Kick_03.mp3"></audio>
-  <audio id="play8" src="audio/1/Kick_04.mp3"></audio>
+  <audio preload="auto" id="playq" src="audio/1/Kick_01.mp3"></audio>
+  <audio preload="auto" id="playw" src="audio/1/Kick_02.mp3"></audio>
+  <audio preload="auto" id="playe" src="audio/1/Kick_03.mp3"></audio>
+  <audio preload="auto" id="playr" src="audio/1/Kick_04.mp3"></audio>
 
-  <audio id="play9" src="audio/1/GTR_01.mp3"></audio>
-  <audio id="play10" src="audio/1/GTR_02.mp3"></audio>
-  <audio id="play11" src="audio/1/GTR_03.mp3"></audio>
-  <audio id="play12" src="audio/1/GTR_04.mp3"></audio>
+  <audio preload="auto" id="playa" src="audio/1/GTR_01.mp3"></audio>
+  <audio preload="auto" id="plays" src="audio/1/GTR_02.mp3"></audio>
+  <audio preload="auto" id="playd" src="audio/1/GTR_03.mp3"></audio>
+  <audio preload="auto" id="playf" src="audio/1/GTR_04.mp3"></audio>
+
+  <audio preload="auto" id="playz" src="audio/1/HiHAT_1.mp3"></audio>
+  <audio preload="auto" id="playx" src="audio/1/HiHAT_2.mp3"></audio>
+  <audio preload="auto" id="playc" src="audio/1/HiHAT_3.mp3"></audio>
+  <audio preload="auto" id="playv" src="audio/1/HiHAT_4.mp3"></audio>
+  
 
 
 <main>
@@ -35,22 +41,29 @@
     <div id="3" class="row1">3</div>
     <div id="4" class="row1">4</div>
 
-    <div id="5" class="row2">q</div>
-    <div id="6" class="row2">w</div>
-    <div id="7" class="row2">e</div>
-    <div id="8" class="row2">e</div>
+    <div id="q" class="row2">q</div>
+    <div id="w" class="row2">w</div>
+    <div id="e" class="row2">e</div>
+    <div id="r" class="row2">e</div>
 
-    <div id="9" class="row3">a</div>
-    <div id="10" class="row3">s</div>
-    <div id="11" class="row3">d</div>
-    <div id="12" class="row3">f</div>
+    <div id="a" class="row3">a</div>
+    <div id="s" class="row3">s</div>
+    <div id="d" class="row3">d</div>
+    <div id="f" class="row3">f</div>
 
-    <div class="row4">z</div>
-    <div class="row4">x</div>
-    <div class="row4">c</div>
-    <div class="row4">v</div>
+    <div id="z" class="row4">z</div>
+    <div id="x" class="row4">x</div>
+    <div id="c" class="row4">c</div>
+    <div id="v" class="row4">v</div>
 </main>
   <script src="script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    //dom is fully loaded, but maybe waiting on images & css files
+    sound.init();
+
+  });
+  </script>
 </body>
 
 </html>

@@ -1,6 +1,23 @@
+let sound = {
+    init : () => 
+        {
+            document.addEventListener('click', handleClick);
+            window.addEventListener('keydown', performClick);
+        },
+
+
+}
+
 let library = 1;
 
-document.addEventListener('click', function (event) {
+function performClick(event){
+
+    let element = document.getElementById(event.key);
+    element.click();
+
+}
+
+function handleClick(event) {
     playSound(event.target.id);
 
 	// If the clicked element doesn't have the right selector, bail
@@ -11,7 +28,7 @@ console.log(event.target.id);
 	// Log the clicked element in the console
     event.target.classList.add("active");
     removeClass(event.target);
-}, false);
+};
 
 
 function playSound (number) {
